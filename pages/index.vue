@@ -101,11 +101,6 @@ export default {
   color: #111;
   margin: 20% auto;
 }
-@media only screen and (min-width: 768px) {
-  #app {
-    margin: 5% auto;
-  }
-}
 .calculator {
   margin: 0 auto;
   width: 80vw;
@@ -160,6 +155,9 @@ export default {
   background: linear-gradient(15deg, hsl(0, 0%, 60%) 0%, hsl(0, 0%, 70%) 100%);
 }
 @media only screen and (min-width: 768px) {
+  #app {
+    margin: 5% auto;
+  }
   .calculator {
     width: 50vw;
     grid-auto-rows: minmax(7.5vh, auto);
