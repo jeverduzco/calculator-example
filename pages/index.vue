@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="parent">
     <div class="calculator" onselectstart="return false">
       <div class="display">{{ display }}</div>
       <div class="button darker" @click="clear">C</div>
@@ -93,7 +93,7 @@ export default {
 </script>
 
 <style scoped>
-#app {
+#parent {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -155,7 +155,7 @@ export default {
   background: linear-gradient(15deg, hsl(0, 0%, 60%) 0%, hsl(0, 0%, 70%) 100%);
 }
 @media only screen and (min-width: 768px) {
-  #app {
+  #parent {
     margin: 5% auto;
   }
   .calculator {
